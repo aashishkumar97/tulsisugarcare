@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tulsi Care Clinic – Doctor Portal (Login)</title>
+  <!-- Load the main stylesheet from the shared css folder -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="login-body">
+  <main class="login-split">
+
+    <!-- Left: Illustration / brand -->
+    <aside class="login-illustration">
+      <div class="brand-mark">
+        <div class="brand-logo" aria-hidden="true"></div>
+        <div class="brand-name">tulsi<span>care</span></div>
+      </div>
+
+      <div class="illustration-layer">
+        <!-- floating pills and circles drawn via CSS; slot for optional image -->
+        <!-- If you have an SVG/PNG, drop an <img class="hero-img" src="..." alt=""> here -->
+      </div>
+
+      <p class="tagline">
+        Secure access to patient records and prescriptions.
+      </p>
+    </aside>
+
+    <!-- Right: Login form -->
+    <section class="login-panel card card--elevated">
+      <header class="panel-head">
+        <h2>Welcome!</h2>
+        <p class="muted small">
+          Demo credentials — <strong>Username:</strong> <code>test</code> &nbsp;
+          <strong>Password:</strong> <code>test</code>
+        </p>
+      </header>
+
+      <form id="loginForm" class="form">
+        <div class="form-row with-icon">
+          <span class="icon mail" aria-hidden="true"></span>
+          <input id="username" name="username" placeholder="Your e-mail / username" autocomplete="username" required />
+        </div>
+
+        <div class="form-row with-icon">
+          <span class="icon lock" aria-hidden="true"></span>
+          <input id="password" name="password" type="password" placeholder="Your password" autocomplete="current-password" required />
+        </div>
+
+        <div class="form-meta">
+          <label class="checkbox">
+            <input type="checkbox" /> <span>Remember my password</span>
+          </label>
+          <a class="link" href="#">Forgot your password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-cta">LOGIN</button>
+        <button type="button" id="fillDemo" class="btn btn-ghost">Use demo</button>
+
+        <p id="loginMsg" class="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <small>© <span id="year"></span> Tulsi Care Clinic. All rights reserved.</small>
+  </footer>
+
+  <!-- Load the login controller from the shared js folder -->
+  <script src="js/login.js"></script>
+</body>
+</html>
